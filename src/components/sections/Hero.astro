@@ -1,10 +1,12 @@
 ---
 import {basics} from '@cv'
-const {name, label, image, location,profiles,email} = basics
+import Section from '@/components/Section.astro'
+import Mail from '@/assets/Mail.png'
+const {name, label, image, location,profiles,email, icon} = basics
 const {city,region} = location
 ---
 
-<section>
+<Section>
 <div class="container">
     <div class="info">
         <h1><span class="text-8xl font-bold text-purple-950 mt-10">{name} </span></h1>
@@ -20,8 +22,13 @@ const {city,region} = location
         title= {`Enviar un correo electrónico a ${name} al correo ${email}`}
         target="_blank"
         rel="noopener noreferrer"
+        
         >
-Email
+            <figure>
+                <img src={icon} alt="email" width="60px"/>
+            </figure>
+        
+           
         </a>
     )
     }
@@ -35,11 +42,8 @@ Email
     </figure>
 
 </div>
-</section>
+</Section>
 
 <style>
-   section{
-    max-width: 700px;
-    margin: 0 auto 72px;
-   }
+ 
 </style>
