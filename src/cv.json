@@ -1,0 +1,63 @@
+{
+    "basics": {
+      "name": "Aguas Santas Núñez Fresco",
+      "label": "Desarrollador Web",
+      "image": "../src/assets/foto_presentacion.png",
+      "email": "aguassantasnunez@gmail.com",
+      "phone": "+34 685898079",
+      "url": "https://agua17.github.io/portfolio_agua/",
+      "summary": "Técnica en desarrollo de aplicaciones web, y a través de este portfolio me gustaría mostraros mis conocimientos y los proyectos realizados",
+      "location": {
+        "address": "Los Palacios y Villafranca",
+        "postalCode": "41720",
+        "city": "Sevilla",
+        "countryCode": "ES",
+        "region": "España"
+      },
+      "profiles": [{
+        "network": "Linkedin",
+        "username": "Aguas Santas",
+        "url": "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+      }]
+    },
+    "work": [{
+      "name": "Plexus Tech",
+      "position": "Contrato en Prácticas",
+      "url": "https://www.plexus.es/",
+      "startDate": "2024-03-18",
+      "endDate": "2024-05-31"
+    }],
+    
+    "education": [{
+      "institution": "ITP FP PABLO DE LA TORRE",
+      "url": "https://itpformacionprofesional.com/",
+      "area": "FP SUPERIOR EN DESARROLLO DE APLICACIONES WEB",
+      "startDate": "2022-09-15",
+      "endDate": "2024-06-20"
+    }],
+    
+    "certificates": [{
+      "name": "Javascript",
+      "date": "2024-09-25",
+      "issuer": "Udemy",
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-f0b4befa-4b3e-41f0-ac4f-11d3072c17a9.jpg"
+    }],
+   
+    "skills": [{
+      "name": "Desarrollador Web",
+      "level": "Junior",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Angular",
+        "Astro",
+        "Typescript"
+      ]
+    }],
+    "languages": [{
+      "language": "Inglés",
+      "fluency": "B1 Aptis"
+    }]
+   
+  }
