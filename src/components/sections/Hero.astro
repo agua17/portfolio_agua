@@ -2,8 +2,13 @@
 import {basics} from '@cv'
 import Section from '@/components/Section.astro'
 import Mail from '@/assets/Mail.png'
-const {name, label, image, location,profiles,email, icon} = basics
+import { Image } from 'astro:assets'
+
+import image from '../../assets/foto_presentacion.png';
+const {name, label, location,profiles,email, icon} = basics
 const {city,region} = location
+
+
 ---
 
 <Section>
@@ -38,7 +43,7 @@ const {city,region} = location
 </footer>
     </div>
     <figure>
-        <img src={image} alt={name} />
+        <Image src={image} alt={name} />
     </figure>
 
 </div>
