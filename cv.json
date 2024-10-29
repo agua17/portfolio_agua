@@ -2,7 +2,7 @@
     "basics": {
       "name": "Aguas Santas Núñez Fresco",
       "label": "Desarrollador Web",
-      "image": "../assets/foto_presentacion.png",
+      "image": "../../assets/foto_presentacion.png",
       "email": "aguassantasnunez@gmail.com",
       "icon":"../src/assets/Mail.png",
       "phone": "+34 685898079",

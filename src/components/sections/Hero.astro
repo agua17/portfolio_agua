@@ -3,9 +3,9 @@ import {basics} from '@cv'
 import Section from '@/components/Section.astro'
 import Mail from '@/assets/Mail.png'
 import { Image } from 'astro:assets'
-
 import image from '../../assets/foto_presentacion.png';
-const {name, label, location,profiles,email, icon} = basics
+import icon from '../../assets/Mail.png'
+const {name, label, location,profiles,email} = basics
 const {city,region} = location
 
 
@@ -30,7 +30,7 @@ const {city,region} = location
         
         >
             <figure>
-                <img src={icon} alt="email" width="60px"/>
+                <Image src={icon} alt="email" />
             </figure>
         
            
