@@ -43,12 +43,23 @@
       "summary": " Durante el periodo de las prácticas configuré un entorno de desarrollo ágil y optimizado con Angular CLI, y gestioné el control de versiones con Git y GitHub para facilitar la colaboración. Diseñé componentes reutilizables siguiendo la arquitectura de Microfrontends, enfocándome en la escalabilidad y mantenibilidad de la aplicación. Utilicé @Input y @Output para mejorar la comunicación entre componentes y apliqué Pipes para transformar los datos en la interfaz. También implementé conexiones asíncronas con httpClient y desarrollé interfaces interactivas con modales para mejorar la experiencia del usuario."
     }],
     
-    "education": [{
+    "education": [
+      {
+       "icon_us": "../portfolio_agua-1/src/assets/GitHub.png",
+        "institution": "Universidad De Sevilla",
+      "url": "https://educacion.us.es/",
+      "area": "Grado en Educación Infantil",
+      "startDate": "Septiembre-2012",
+      "endDate": "Junio-2016"
+
+      },
+
+      {
       "institution": "ITP FP PABLO DE LA TORRE",
       "url": "https://itpformacionprofesional.com/",
       "area": "FP SUPERIOR EN DESARROLLO DE APLICACIONES WEB",
-      "startDate": "2022-09-15",
-      "endDate": "2024-06-20"
+      "startDate": "Septiembre-2022",
+      "endDate": "Junio-2024"
     }],
     
     "certificates": [{

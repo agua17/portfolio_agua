@@ -1,7 +1,34 @@
 ---
 import Section from "../Section.astro";
+import { education } from "@cv";
+import { basics } from "@cv";
+import { Image } from "astro:assets";
+//import {icono_us} from "../../assets/LogoUs.png";
 ---
 
 <Section title="Educación">
-   </Section>
+  <div>
+    {
+      education.map(({ institution, area, startDate, endDate }) => {
+        return (
+          
+<ol class="relative border-s border-gray-200 dark:border-gray-700">                  
+    <li class="mb-10 ms-6">            
+        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+            
+        </span>
+        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">{institution} </h3>
+        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{startDate} - {endDate}</time>
+        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">{area}</p>
+        
+    </li>
+   
+    
+</ol>
 
+
+        );
+      })
+    }
+  </div>
+</Section>
