@@ -2,19 +2,32 @@
 import {basics} from '@cv'
 import Section from '@/components/Section.astro'
 import Mail from '@/assets/Mail.png'
+import Phone from '@/assets/phone.png'
+import GitHub from '@/assets/GitHub.png'
+import Linkeding from '@/assets/Linkedin.png'
 import { Image } from 'astro:assets'
 import image from '../../assets/foto_presentacion.png';
 import icon from '../../assets/Mail.png'
-const {name, label, location,profiles,email} = basics
+import icon_phone from '../../assets/Phone.png'
+import icon_linkedin from '../../assets/Linkedin.png'
+import icon_github from '../../assets/GitHub.png'
+
+
+const {name, label, location,profiles,email,phone} = basics
 const {city,region} = location
+
 
 
 ---
 
 <Section>
 <div class="container">
+   
     <div class="info">
-        <h1><span class="text-8xl font-bold text-purple-950 mt-10">{name} </span></h1>
+        <h1><span class=" py-4 text-8xl font-bold text-purple-950 mt-10">{name} </span></h1>
+        <figure class="flex w-1/2">
+            <Image src={image} alt={name} />
+        </figure>
 <h2><span class="text-4xl font-bold text-cyan-600 mt-10">{label}</span></h2>
 <span class="text-lg font-bold text-cyan-600 ">
     <!--Icono -->
@@ -29,22 +42,41 @@ const {city,region} = location
         rel="noopener noreferrer"
         
         >
-            <figure class="w-24" >
+            <figure class="w-20" >
                 <Image src={icon} alt="email" />
             </figure>
         
            
         </a>
+        
     )
     }
 
+    {
+        phone &&(
+            <a href={`tel:${phone}`}
+            title={`Llamar por teléfono a ${name} al número ${phone}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+ <figure class="w-20" >
+                <Image src={icon_phone} alt="email" />
+            </figure>
+            </a>
+        )
+    }
+
+<figure class="w-20" >
+    <Image src={icon_linkedin} alt="email" />
+</figure>
     
+<figure class="w-20" >
+    <Image src={icon_github} alt="email" />
+</figure>
     
 </footer>
     </div>
-    <figure class="flex w-1/2">
-        <Image src={image} alt={name} />
-    </figure>
+   
 
 </div>
 </Section>

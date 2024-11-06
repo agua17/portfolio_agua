@@ -6,6 +6,10 @@
       "email": "aguassantasnunez@gmail.com",
       "icon":"../src/assets/Mail.png",
       "phone": "+34 685898079",
+      "icon_phone": "../portfolio_agua-1/src/assets/phone.png",
+      "icon_linkedin": "../portfolio_agua-1/src/assets/Linkedin.png",
+      "icon_github": "../portfolio_agua-1/src/assets/GitHub.png",
+
       "url": "https://agua17.github.io/portfolio_agua/",
       "summary": "Técnica en desarrollo de aplicaciones web, y a través de este portfolio me gustaría mostraros mis conocimientos y los proyectos realizados",
       "location": {
@@ -15,11 +19,20 @@
         "countryCode": "ES",
         "region": "España"
       },
-      "profiles": [{
+      "profiles": [
+        {
         "network": "Linkedin",
         "username": "Aguas Santas",
         "url": "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
-      }]
+      },
+      {
+        "network": "GitHub",
+        "username": "Aguas Santas",
+        "url": "https://github.com/agua17"
+
+      }
+
+    ]
     },
     "work": [{
       "name": "Plexus Tech",
