@@ -38,8 +38,9 @@
       "name": "Plexus Tech",
       "position": "Contrato en Prácticas",
       "url": "https://www.plexus.es/",
-      "startDate": "2024-03-18",
-      "endDate": "2024-05-31"
+      "startDate": "Marzo-2024",
+      "endDate": "Mayo-2024",
+      "summary": " Durante el periodo de las prácticas configuré un entorno de desarrollo ágil y optimizado con Angular CLI, y gestioné el control de versiones con Git y GitHub para facilitar la colaboración. Diseñé componentes reutilizables siguiendo la arquitectura de Microfrontends, enfocándome en la escalabilidad y mantenibilidad de la aplicación. Utilicé @Input y @Output para mejorar la comunicación entre componentes y apliqué Pipes para transformar los datos en la interfaz. También implementé conexiones asíncronas con httpClient y desarrollé interfaces interactivas con modales para mejorar la experiencia del usuario."
     }],
     
     "education": [{
