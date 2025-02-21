@@ -19,14 +19,14 @@ const {city,region} = location
 ---
 
 <Section>
-<div class="container">
-   <div class="photo_me relative h-56 w-56 top-0.5 right-14 ..."> 
-    <figure class="absolute right-6">
+<div class="container sm:max-w-full">
+   <div class="photo_me "> 
+    <figure class="">
         <Image src={image} alt={name} />
     </figure>
    </div>
-    <div class="info absolute top-14 right-40">
-        <h1><span class="  text-6xl font-bold text-purple-950 mt-10">{name} </span></h1>
+    <div class="info  top-14 right-40">
+        <h1><span class="  text-4xl font-bold text-purple-950 mt-10">{name} </span></h1>
        
 <h2><span class="text-4xl font-bold text-cyan-600 mt-10">{label}</span></h2>
 <span class="text-lg font-bold text-cyan-600 ">
@@ -36,7 +36,7 @@ const {city,region} = location
 
     </div>
     <div class="iconos_redes">
-        <footer class="flex items-stretch mx-14  space-x-20 ...">
+        <footer class="flex items-stretch ...">
             {email && (
                 <a 
                 href={`mailto: ${email}`}
@@ -68,11 +68,25 @@ const {city,region} = location
                     </a>
                 )
             }
+
+{
+    Linkedin &&(
+        <a href={`https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile`}
+      title={`Perfil de ${name} `}
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+<figure class="w-20" >
+            <Image src={icon_linkedin} alt="Linkedin" />
+        </figure>
+        </a>
+    )
+}
+
+            
         
         
-                <figure class="w-20" >
-                    <Image src={icon_linkedin} alt="email" />
-                </figure>
+           
             
                
         
