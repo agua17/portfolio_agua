@@ -83,23 +83,20 @@ const {city,region} = location
     )
 }
 
-            
-        
-        
-           
-            
-               
-        
-            
-        
-        
-        
-        
-        
-            
-        <figure class="w-20" >
-            <Image src={icon_github} alt="email" />
+{
+    GitHub &&(
+        <a href={`https://github.com/agua17`}
+      title={`Cuenta de GitHub de ${name} `}
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+<figure class="w-20" >
+            <Image src={icon_github} alt="GitHub" />
         </figure>
+        </a>
+    )
+}
+
             
         </footer>
     
