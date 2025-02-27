@@ -77,6 +77,17 @@
       "issuer": "Udemy",
       "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-f0b4befa-4b3e-41f0-ac4f-11d3072c17a9.jpg"
     }],
+
+    
+      "habilidades": [
+        { "name": "Responsable", "icon": "CheckCircle" },
+        { "name": "Proactiva", "icon": "Rocket" },
+        { "name": "Trabajo en equipo", "icon": "Users" },
+        { "name": "Autosuficiente", "icon": "BatteryCharging" },
+        { "name": "Tolerancia a la presión", "icon": "Flame" }
+      ],
+    
+    
    
     "skills": [{
       "name": "Desarrollador Web",
