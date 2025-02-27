@@ -17,95 +17,87 @@ const { city, region } = location;
 ---
 
 <Section>
-  <div class="container sm:max-w-full">
-    <div
-      class="photo_me- flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-between p-4"
-    >
-      <figure class="w-full sm:w-1/3 flex justify-center">
-        <Image
-          src={image}
-          alt={name}
-          class="w-full h-auto max-w-xs sm:max-w-full object-cover"
-        />
+  <div class="container flex flex-row items-center sm:items-start">
+    <div class="photo_me">
+      <figure class="max-w-full h-auto">
+        <Image src={image} alt={name} />
       </figure>
     </div>
-    <div class="info w-full sm:w-2/3 text-center sm:text-left mt-4 sm:mt-0">
+    <div class="info gap-8 mt-36">
       <h1>
-        <span class="text-2xl font-bold text-purple-950">{name} </span>
+        <span class="text-4xl font-bold text-purple-950 mt-10">{name} </span>
       </h1>
 
       <h2>
-        <span class="text-xl font-bold text-cyan-600">{label}</span>
+        <span class="text-4xl font-bold text-cyan-600 mt-10">{label}</span>
       </h2>
       <span class="text-lg font-bold text-cyan-600">
         {city}, {region}
       </span>
     </div>
-    <div
-      class="iconos_redes- w-full sm:w-2/3 flex justify-center sm:justify-start mt-4 sm:mt-4"
-    >
-      <footer class="flex items-stretch ...">
-        {
-          email && (
-            <a
-              href={`mailto: ${email}`}
-              title={`Enviar un correo electrónico a ${name} al correo ${email}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <figure class="w-20">
-                <Image src={icon} alt="email" />
-              </figure>
-            </a>
-          )
-        }
+  </div>
+  <div class="iconos_redes">
+    <footer class="flex">
+      {
+        email && (
+          <a
+            href={`mailto: ${email}`}
+            title={`Enviar un correo electrónico a ${name} al correo ${email}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <figure class="w-20">
+              <Image src={icon} alt="email" />
+            </figure>
+          </a>
+        )
+      }
 
-        {
-          phone && (
-            <a
-              href={`tel:${phone}`}
-              title={`Llamar por teléfono a ${name} al número ${phone}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <figure class="w-20">
-                <Image src={icon_phone} alt="email" />
-              </figure>
-            </a>
-          )
-        }
+      {
+        phone && (
+          <a
+            href={`tel:${phone}`}
+            title={`Llamar por teléfono a ${name} al número ${phone}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <figure class="w-20">
+              <Image src={icon_phone} alt="email" />
+            </figure>
+          </a>
+        )
+      }
 
-        {
-          Linkedin && (
-            <a
-              href={`https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile`}
-              title={`Perfil de ${name} `}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <figure class="w-20">
-                <Image src={icon_linkedin} alt="Linkedin" />
-              </figure>
-            </a>
-          )
-        }
+      {
+        Linkedin && (
+          <a
+            href={`https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile`}
+            title={`Perfil de ${name} `}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <figure class="w-20">
+              <Image src={icon_linkedin} alt="Linkedin" />
+            </figure>
+          </a>
+        )
+      }
 
-        {
-          GitHub && (
-            <a
-              href={`https://github.com/agua17`}
-              title={`Cuenta de GitHub de ${name} `}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <figure class="w-20">
-                <Image src={icon_github} alt="GitHub" />
-              </figure>
-            </a>
-          )
-        }
-      </footer>
-    </div>
+      {
+        GitHub && (
+          <a
+            href={`https://github.com/agua17`}
+            title={`Cuenta de GitHub de ${name} `}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <figure class="w-20">
+              <Image src={icon_github} alt="GitHub" />
+            </figure>
+          </a>
+        )
+      }
+    </footer>
   </div>
 </Section>
 
