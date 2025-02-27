@@ -89,19 +89,16 @@
     
     
    
-    "skills": [{
-      "name": "Desarrollador Web",
-      "level": "Junior",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Angular",
-        "Astro",
-        "Typescript"
+    "languages": [{
+     
+      "lenguajes": [
+       {"name":"HTML", "icon_html":"./src/assets/html-5.png"  }, 
+       {"name":"Javascript", "icon_js":"./src/assets/js.png"  },
+       {"name":"Typescript", "icon_ts":"./src/assets/typescript.png"  }
+        
       ]
     }],
-    "languages": [{
+    "language": [{
       "language": "Inglés",
       "fluency": "B1 Aptis"
     }]

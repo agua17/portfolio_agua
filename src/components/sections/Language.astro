@@ -1,0 +1,53 @@
+---
+import Section from "../Section.astro";
+import { Image } from "astro:assets";
+import { languages } from "@cv";
+import icon_html from "../../assets/html-5.png";
+import icon_js from "../../assets/js.png";
+import icon_ts from "../../assets/typescript.png";
+---
+
+<!--
+    "CSS",
+        "JavaScript",
+        "Angular",
+        "Astro",
+        "Typescript" -->
+<Section title="Lenguajes de Programación">
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+    {
+      languages[0].lenguajes.map((keyword) => (
+        <div class="flex flex-col items-center">
+          {keyword.icon_html && (
+            <Image
+              src={icon_html}
+              alt={keyword.name}
+              width={64}
+              height={64}
+              class="mb-2"
+            />
+          )}
+          {keyword.icon_js && (
+            <Image
+              src={icon_js}
+              alt={keyword.name}
+              width={64}
+              height={64}
+              class="mb-2"
+            />
+          )}
+          {keyword.icon_ts && (
+            <Image
+              src={icon_ts}
+              alt={keyword.name}
+              width={64}
+              height={64}
+              class="mb-2"
+            />
+          )}
+          <span class="text-sm text-center">{keyword.name}</span>
+        </div>
+      ))
+    }
+  </div>
+</Section>
