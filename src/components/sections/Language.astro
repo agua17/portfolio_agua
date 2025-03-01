@@ -5,14 +5,12 @@ import { languages } from "@cv";
 import icon_html from "../../assets/html-5.png";
 import icon_js from "../../assets/js.png";
 import icon_ts from "../../assets/typescript.png";
+import icon_angular from "../../assets/logo_angular.png";
+import icon_astro from "../../assets/astro.png";
+import icon_css from "../../assets/css-3.png";
+import icon_tailwind from "../../assets/tailwind.png";
 ---
 
-<!--
-    "CSS",
-        "JavaScript",
-        "Angular",
-        "Astro",
-        "Typescript" -->
 <Section title="Lenguajes de Programación">
   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
     {
@@ -39,6 +37,42 @@ import icon_ts from "../../assets/typescript.png";
           {keyword.icon_ts && (
             <Image
               src={icon_ts}
+              alt={keyword.name}
+              width={64}
+              height={64}
+              class="mb-2"
+            />
+          )}
+          {keyword.icon_angular && (
+            <Image
+              src={icon_angular}
+              alt={keyword.name}
+              width={64}
+              height={64}
+              class="mb-2"
+            />
+          )}
+          {keyword.icon_astro && (
+            <Image
+              src={icon_astro}
+              alt={keyword.name}
+              width={64}
+              height={64}
+              class="mb-2"
+            />
+          )}
+          {keyword.icon_css && (
+            <Image
+              src={icon_css}
+              alt={keyword.name}
+              width={64}
+              height={64}
+              class="mb-2"
+            />
+          )}
+          {keyword.icon_tailwind && (
+            <Image
+              src={icon_tailwind}
               alt={keyword.name}
               width={64}
               height={64}

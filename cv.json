@@ -94,7 +94,15 @@
       "lenguajes": [
        {"name":"HTML", "icon_html":"./src/assets/html-5.png"  }, 
        {"name":"Javascript", "icon_js":"./src/assets/js.png"  },
-       {"name":"Typescript", "icon_ts":"./src/assets/typescript.png"  }
+       {"name":"Typescript", "icon_ts":"./src/assets/typescript.png"  },
+       {"name":"Angular", "icon_angular":"./src/assets/logo_angular.png"  },
+       {"name":"Astro", "icon_astro":"./src/assets/astro.png"  },
+       {"name":"CSS", "icon_css":"./src/assets/css-3.png"  },
+       {"name":"Tailwind", "icon_tailwind":"./src/assets/tailwind.png"  }
+
+
+
+
         
       ]
     }],
