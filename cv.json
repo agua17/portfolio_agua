@@ -109,6 +109,15 @@
     "language": [{
       "language": "Inglés",
       "fluency": "B1 Aptis"
+    }],
+    
+    "formation": [{
+      "name": "Javascript Moderno",
+      "image":"../../assets/foto_presentacion.png",
+      "url": "https://www.udemy.com/certificate/UC-f0b4befa-4b3e-41f0-ac4f-11d3072c17a9/",
+      "startDate": "2024",
+      "endDate": "Mayo-2024",
+      "summary": " Durante el periodo de las prácticas configuré un entorno de desarrollo ágil y optimizado con Angular CLI, y gestioné el control de versiones con Git y GitHub para facilitar la colaboración. Diseñé componentes reutilizables siguiendo la arquitectura de Microfrontends, enfocándome en la escalabilidad y mantenibilidad de la aplicación. Utilicé @Input y @Output para mejorar la comunicación entre componentes y apliqué Pipes para transformar los datos en la interfaz. También implementé conexiones asíncronas con httpClient y desarrollé interfaces interactivas con modales para mejorar la experiencia del usuario."
     }]
    
   }
