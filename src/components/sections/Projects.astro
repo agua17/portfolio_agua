@@ -1,62 +1,81 @@
 ---
 import { Image } from "astro:assets";
 import Section from "../Section.astro";
-import {basics} from "@cv"
-import fisio from "../../assets/fisioterapeuta.png"
+import { basics } from "@cv";
+import carrito from "../../assets/web_carrito.png";
 
-const {name, label, location,profiles,email,phone} = basics
-
+const { name } = basics;
 ---
 
 <Section title="Proyectos">
-    
-
-<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+  <div
+    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+  >
     <figure class="rounded-t-lg">
-        <Image src={fisio} alt={name} />
+      <Image src={carrito} alt={name} />
     </figure>
     <div class="p-5">
-        <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Fisioterapia Web</h5>
-        </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Desde este proyecto mostramos los beneficios de diferentes tipos de masajes que ofrece una clínica de Sevilla.</p>
-        <!-- Botón para abrir el modal -->
-        <button
-            id="openModalBtn"
-            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      <a
+        href="https://agua17.github.io/carritoCompra/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <h5
+          class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
         >
-            Acceder
-            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-        </button>
-    </div>
-</div>
+          Web carrito
+        </h5>
+      </a>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+        A través de este proyecto hemos creado una web con el componente del
+        carrito de la compra.
+      </p>
 
-<!-- Modal -->
-<div
-    id="modal"
-    class="hidden fixed inset-0 z-50 bg-black bg-opacity-50 flex justify-center items-center"
->
-    <div class="bg-white p-4 rounded-lg">
-        <!-- Imagen del modal desde la carpeta assets -->
-        <img
-            src="/src/assets/actualizando_web.png"  
-            alt="Imagen Modal"
-            class="max-w-full"
-        />
-        <button
-            id="closeModalBtn"
-            class="mt-2 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-700"
+      <a
+        href="https://agua17.github.io/carritoCompra/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        Acceder a la web
+        <svg
+          class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 14 10"
         >
-            Cerrar
-        </button>
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+        </svg>
+      </a>
+
+      <a
+        href="https://github.com/agua17/carritoCompra"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center px-3 py-2 mt-3 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-700 dark:hover:bg-gray-800 dark:focus:ring-gray-900"
+      >
+        GitHub
+        <svg
+          class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 14 10"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+        </svg>
+      </a>
     </div>
-</div>
+  </div>
 </Section>
-
-
-
-    
-</Section>
-

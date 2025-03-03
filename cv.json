@@ -2,7 +2,7 @@
     "basics": {
       "name": "Aguas Santas Núñez Fresco",
       "label": "Desarrollador Web",
-      "fisio": "../portfolio_agua-1/src/assets/fisioterapeuta.png",
+      "carrito": "../portfolio_agua-1/src/assets/web_carrito.png",
       "image": "../../assets/foto_presentacion.png",
       "email": "aguassantasnunez@gmail.com",
       "icon":"../src/assets/Mail.png",
@@ -37,6 +37,7 @@
     },
     "projects":[
       {
+
        
 
 
