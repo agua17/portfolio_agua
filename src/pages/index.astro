@@ -1,33 +1,42 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import Experience from "@/components/sections/Experience.astro";
-import About from "@/components/sections/About.astro";
-import Education from "@/components/sections/Education.astro";
-import Skills from "@/components/sections/Skills.astro";
-import Hero from "@/components/sections/Hero.astro";
-import Projects from "@/components/sections/Projects.astro";
-import KeyboardManager from "@/components/KeyboardManager.astro";
-import Language from "@/components/sections/Language.astro";
-import Formation from "@/components/sections/Formation.astro";
+import Layout from "@/layouts/Layout.astro"
+import Hero from "@/components/sections/Hero.astro"
+import Projects from "@/components/sections/Projects.astro"
+import About from "@/components/sections/About.astro"
+import Experience from "@/components/sections/Experience.astro"
+import Language from "@/components/sections/Language.astro"
+import Education from "@/components/sections/Education.astro"
 ---
 
-<Layout title="Aguas Santas Núñez Fresco">
-  <main>
+<Layout title="Aguas Santas Núñez Fresco · Desarrolladora frontend junior">
+  <main id="contenido">
     <Hero />
+    <Projects />
     <About />
     <Experience />
-    <Education />
-    <Projects />
-    <Formation />
-    <Skills />
     <Language />
+    <Education />
+    <section
+      id="contacto"
+      class="contact-section"
+      aria-labelledby="contact-title"
+    >
+      <p class="eyebrow">CONTACTO</p>
+      <h2 id="contact-title">¿Buscas una desarrolladora frontend junior?</h2>
+      <p>
+        Busco una oportunidad como desarrolladora frontend junior.<br />Puedes
+        escribirme para conocer mi trabajo.
+      </p>
+      <a
+        class="button primary"
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=aguassantasnunez%40gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Escríbeme
+        <a class="contact-email" href="mailto:aguassantasnunez@gmail.com"
+          >aguassantasnunez@gmail.com</a
+        >
+      </a>
+    </section>
   </main>
 </Layout>
-
-<style>
-  main {
-    padding: 1rem;
-    margin: auto;
-    width: 100%;
-  }
-</style>

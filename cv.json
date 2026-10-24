@@ -1,124 +1,150 @@
 {
-    "basics": {
-      "name": "Aguas Santas Núñez Fresco",
-      "label": "Desarrollador Web",
-      "carrito": "../portfolio_agua-1/src/assets/web_carrito.png",
-      "image": "../../assets/foto_presentacion.png",
-      "email": "aguassantasnunez@gmail.com",
-      "icon":"../src/assets/Mail.png",
-      "phone": "+34 685898079",
-      "icon_phone": "../portfolio_agua-1/src/assets/phone.png",
-      "icon_linkedin": "../portfolio_agua-1/src/assets/Linkedin.png",
-      "icon_github": "../portfolio_agua-1/src/assets/GitHub.png",
-
-      "url": "https://agua17.github.io/portfolio_agua/",
-      "summary": "Técnica en desarrollo de aplicaciones web, y a través de este portfolio me gustaría mostraros mis conocimientos y los proyectos realizados",
-      "location": {
-        "address": "Los Palacios y Villafranca",
-        "postalCode": "41720",
-        "city": "Sevilla",
-        "countryCode": "ES",
-        "region": "España"
-      },
-      "profiles": [
-        {
-        "network": "Linkedin",
-        "username": "Aguas Santas",
-        "url": "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
-      },
+  "basics": {
+    "name": "Aguas Santas Núñez Fresco",
+    "label": "Desarrolladora frontend junior",
+    "email": "aguassantasnunez@gmail.com",
+    "phone": "+34 685898079",
+    "url": "https://agua17.github.io/portfolio_agua/",
+    "summary": "Técnica Superior en Desarrollo de Aplicaciones Web, con prácticas en Plexus Tech y proyectos para pequeños negocios con WordPress. Actualmente refuerzo JavaScript, DOM, eventos y formularios.",
+    "location": {
+      "address": "Los Palacios y Villafranca",
+      "postalCode": "41720",
+      "city": "Sevilla",
+      "countryCode": "ES",
+      "region": "España"
+    },
+    "profiles": [
       {
         "network": "GitHub",
         "username": "Aguas Santas",
         "url": "https://github.com/agua17"
-
       }
-
     ]
+  },
+  "projects": [
+    {
+      "name": "Carrito de cursos",
+      "type": "Práctica formativa",
+      "url": "https://agua17.github.io/carritoCompra/",
+      "repository": "https://github.com/agua17/carritoCompra"
     },
-    "projects":[
-      {
-
-       
-
-
-      }
-    ],
-
-    "work": [{
+    {
+      "name": "Bohemia Colección",
+      "technology": "WordPress y WooCommerce",
+      "url": "https://bohemiacoleccion.com/",
+      "summary": "Catálogo online de productos personalizados, sin compra ni pago online, con solicitudes de pedido por correo.",
+      "images": [
+        {
+          "src": "/src/assets/02_catalogo.png",
+          "alt": "Catálogo de categorías de Bohemia Colección",
+          "caption": "Catálogo de productos"
+        },
+        {
+          "src": "/src/assets/bohemia/01_inicio.png",
+          "alt": "Página de inicio de Bohemia Colección",
+          "caption": "Página de inicio"
+        },
+        {
+          "src": "/src/assets/bohemia/03_formulario_pedido.png",
+          "alt": "Formulario para solicitar un pedido personalizado",
+          "caption": "Solicitud de pedido"
+        },
+        {
+          "src": "/src/assets/bohemia/04_envio_y_redes.png",
+          "alt": "Envío de solicitudes y enlaces a redes sociales",
+          "caption": "Envío y redes sociales"
+        }
+      ]
+    }
+  ],
+  "work": [
+    {
       "name": "Plexus Tech",
-      "position": "Desarrollador Web",
+      "position": "Desarrolladora web en prácticas",
       "url": "https://www.plexus.es/",
       "startDate": "Marzo-2024",
       "endDate": "Mayo-2024",
       "summary": " Durante el periodo de las prácticas configuré un entorno de desarrollo ágil y optimizado con Angular CLI, y gestioné el control de versiones con Git y GitHub para facilitar la colaboración. Diseñé componentes reutilizables siguiendo la arquitectura de Microfrontends, enfocándome en la escalabilidad y mantenibilidad de la aplicación. Utilicé @Input y @Output para mejorar la comunicación entre componentes y apliqué Pipes para transformar los datos en la interfaz. También implementé conexiones asíncronas con httpClient y desarrollé interfaces interactivas con modales para mejorar la experiencia del usuario."
-    }],
-    
-    "education": [
-      {
-       "icon_us": "../portfolio_agua-1/src/assets/GitHub.png",
-        "institution": "Universidad De Sevilla",
+    }
+  ],
+  "education": [
+    {
+      "icon_us": "../portfolio_agua-1/src/assets/GitHub.png",
+      "institution": "Universidad De Sevilla",
       "url": "https://educacion.us.es/",
       "area": "Grado en Educación Infantil",
       "startDate": "Septiembre-2012",
       "endDate": "Junio-2016"
-
-      },
-
-      {
+    },
+    {
       "institution": "ITP FP PABLO DE LA TORRE",
       "url": "https://itpformacionprofesional.com/",
       "area": "FP SUPERIOR EN DESARROLLO DE APLICACIONES WEB",
       "startDate": "Septiembre-2022",
       "endDate": "Junio-2024"
-    }],
-    
-    "certificates": [{
+    }
+  ],
+  "certificates": [
+    {
       "name": "Javascript",
       "date": "2024-09-25",
       "issuer": "Udemy",
       "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-f0b4befa-4b3e-41f0-ac4f-11d3072c17a9.jpg"
-    }],
-
-    
-      "habilidades": [
-        { "name": "Responsable", "icon": "CheckCircle" },
-        { "name": "Proactiva", "icon": "Rocket" },
-        { "name": "Trabajo en equipo", "icon": "Users" },
-        { "name": "Autosuficiente", "icon": "BatteryCharging" },
-        { "name": "Tolerancia a la presión", "icon": "Flame" }
-      ],
-    
-    
-   
-    "languages": [{
-     
+    }
+  ],
+  "languages": [
+    {
       "lenguajes": [
-       {"name":"HTML", "icon_html":"./src/assets/html-5.png"  }, 
-       {"name":"Javascript", "icon_js":"./src/assets/js.png"  },
-       {"name":"Typescript", "icon_ts":"./src/assets/typescript.png"  },
-       {"name":"Angular", "icon_angular":"./src/assets/logo_angular.png"  },
-       {"name":"Astro", "icon_astro":"./src/assets/astro.png"  },
-       {"name":"CSS", "icon_css":"./src/assets/css-3.png"  },
-       {"name":"Tailwind", "icon_tailwind":"./src/assets/tailwind.png"  }
-
-
-
-
-        
+        {
+          "name": "HTML",
+          "icon_html": "./src/assets/html-5.png"
+        },
+        {
+          "name": "Javascript",
+          "icon_js": "./src/assets/js.png"
+        },
+        {
+          "name": "Typescript",
+          "icon_ts": "./src/assets/typescript.png"
+        },
+        {
+          "name": "Angular",
+          "icon_angular": "./src/assets/logo_angular.png"
+        },
+        {
+          "name": "Astro",
+          "icon_astro": "./src/assets/astro.png"
+        },
+        {
+          "name": "CSS",
+          "icon_css": "./src/assets/css-3.png"
+        },
+        {
+          "name": "Tailwind",
+          "icon_tailwind": "./src/assets/tailwind.png"
+        }
       ]
-    }],
-    "language": [{
+    }
+  ],
+  "language": [
+    {
       "language": "Inglés",
       "fluency": "B1 Aptis"
-    }],
-    
-    "formation": [{
-      "name": "Javascript Moderno",
-      "image":"../../assets/foto_presentacion.png",
-      "url": "https://www.udemy.com/certificate/UC-f0b4befa-4b3e-41f0-ac4f-11d3072c17a9/",
-      "startDate": "2024",
-      "endDate": "Mayo-2024",
-      "summary": " Durante el periodo de las prácticas configuré un entorno de desarrollo ágil y optimizado con Angular CLI, y gestioné el control de versiones con Git y GitHub para facilitar la colaboración. Diseñé componentes reutilizables siguiendo la arquitectura de Microfrontends, enfocándome en la escalabilidad y mantenibilidad de la aplicación. Utilicé @Input y @Output para mejorar la comunicación entre componentes y apliqué Pipes para transformar los datos en la interfaz. También implementé conexiones asíncronas con httpClient y desarrollé interfaces interactivas con modales para mejorar la experiencia del usuario."
-    }]
-   
-  }
+    }
+  ],
+  "formation": [
+    {
+      "name": "Formación práctica en JavaScript y desarrollo web",
+      "issuer": "David Casas Arenas",
+      "startDate": "2025-11",
+      "endDate": "Actualidad",
+      "summary": "Funciones, arrays, DOM, eventos y formularios. Entregas mediante pull requests y revisión de código de compañeros."
+    },
+    {
+      "name": "JavaScript Total",
+      "issuer": "Federico Garay, Udemy",
+      "endDate": "2024-09",
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-f0b4befa-4b3e-41f0-ac4f-11d3072c17a9.jpg"
+    }
+  ]
+}

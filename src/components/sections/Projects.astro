@@ -1,81 +1,551 @@
 ---
-import { Image } from "astro:assets";
-import Section from "../Section.astro";
-import { basics } from "@cv";
-import carrito from "../../assets/web_carrito.png";
+import { Image } from "astro:assets"
+import Section from "../Section.astro"
 
-const { name } = basics;
+import carrito from "../../assets/web_carrito.png"
+import inicio from "../../assets/01_inicio.png"
+import catalogo from "../../assets/02_catalogo.png"
+import formulario from "../../assets/03_formulario_pedido.png"
+import redes from "../../assets/04_envio_y_redes.png"
+import peliculas from "../../assets/listado_peliculas.png"
+import cronometro from "../../assets/cronometro.png"
 ---
 
-<Section title="Proyectos">
-  <div
-    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-  >
-    <figure class="rounded-t-lg">
-      <Image src={carrito} alt={name} />
-    </figure>
-    <div class="p-5">
-      <a
-        href="https://agua17.github.io/carritoCompra/"
-        target="_blank"
-        rel="noopener noreferrer"
+<Section id="proyectos" title="Una muestra de mi trabajo" eyebrow="PROYECTOS">
+  <article class="project-feature">
+    <div class="project-preview bohemia-preview">
+      <div class="browser-bar" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <small>Bohemia Colección</small>
+      </div>
+
+      <div
+        id="bohemia-carousel"
+        class="bohemia-carousel"
+        role="region"
+        aria-label="Capturas de Bohemia Colección"
+        aria-describedby="bohemia-carousel-help"
+        tabindex="0"
       >
-        <h5
-          class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+        <figure class="bohemia-slide">
+          <button
+            class="image-zoom"
+            type="button"
+            aria-label="Ampliar la página de inicio de Bohemia Colección"
+            aria-haspopup="dialog"
+          >
+            <Image
+              src={inicio}
+              alt="Página de inicio de la versión original de Bohemia Colección"
+              width={380}
+              loading="lazy"
+            />
+          </button>
+
+          <figcaption>01 · Inicio</figcaption>
+        </figure>
+
+        <figure class="bohemia-slide">
+          <button
+            class="image-zoom"
+            type="button"
+            aria-label="Ampliar el catálogo de Bohemia Colección"
+            aria-haspopup="dialog"
+          >
+            <Image
+              src={catalogo}
+              alt="Catálogo de productos de Bohemia Colección"
+              width={380}
+              loading="lazy"
+            />
+          </button>
+
+          <figcaption>02 · Catálogo</figcaption>
+        </figure>
+
+        <figure class="bohemia-slide">
+          <button
+            class="image-zoom"
+            type="button"
+            aria-label="Ampliar el formulario de Bohemia Colección"
+            aria-haspopup="dialog"
+          >
+            <Image
+              src={formulario}
+              alt="Formulario de solicitud de pedido de Bohemia Colección"
+              width={380}
+              loading="lazy"
+            />
+          </button>
+
+          <figcaption>03 · Solicitud de pedido</figcaption>
+        </figure>
+
+        <figure class="bohemia-slide">
+          <button
+            class="image-zoom"
+            type="button"
+            aria-label="Ampliar el envío y las redes de Bohemia Colección"
+            aria-haspopup="dialog"
+          >
+            <Image
+              src={redes}
+              alt="Parte final del formulario y enlaces a redes de Bohemia Colección"
+              width={380}
+              loading="lazy"
+            />
+          </button>
+
+          <figcaption>04 · Envío y redes</figcaption>
+        </figure>
+      </div>
+
+      <div class="gallery-controls">
+        <button
+          class="gallery-arrow"
+          type="button"
+          data-gallery-prev
+          aria-label="Ver captura anterior"
+          aria-controls="bohemia-carousel"
+          disabled
         >
-          Web carrito
-        </h5>
-      </a>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-        A través de este proyecto hemos creado una web con el componente del
-        carrito de la compra.
+          <span aria-hidden="true">←</span>
+        </button>
+
+        <span
+          class="gallery-counter"
+          aria-live="polite"
+          aria-atomic="true"
+          data-gallery-counter
+        >
+          1 / 4
+        </span>
+
+        <button
+          class="gallery-arrow"
+          type="button"
+          data-gallery-next
+          aria-label="Ver captura siguiente"
+          aria-controls="bohemia-carousel"
+        >
+          <span aria-hidden="true">→</span>
+        </button>
+      </div>
+
+      <p id="bohemia-carousel-help" class="bohemia-carousel-help">
+        Usa las flechas o desliza para ver las capturas. Pulsa una imagen para
+        ampliarla.
+      </p>
+    </div>
+
+    <div class="project-copy">
+      <p class="eyebrow">PROYECTO PARA UN PEQUEÑO NEGOCIO</p>
+
+      <h3>Bohemia Colección</h3>
+
+      <p>
+        Desarrollo de una web catálogo de productos personalizados con WordPress
+        y WooCommerce. El cliente necesitaba mostrar sus productos y recibir
+        solicitudes de pedido por correo, sin realizar ventas ni pagos online.
       </p>
 
-      <a
-        href="https://agua17.github.io/carritoCompra/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-      >
-        Acceder a la web
-        <svg
-          class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 14 10"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M1 5h12m0 0L9 1m4 4L9 9"></path>
-        </svg>
-      </a>
+      <ul class="tags" aria-label="Tecnologías de Bohemia Colección">
+        <li>WordPress</li>
+        <li>WooCommerce</li>
+        <li>Contact Form 7</li>
+      </ul>
 
-      <a
-        href="https://github.com/agua17/carritoCompra"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center px-3 py-2 mt-3 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-700 dark:hover:bg-gray-800 dark:focus:ring-gray-900"
-      >
-        GitHub
-        <svg
-          class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 14 10"
+      <details>
+        <summary>Mi trabajo en este proyecto</summary>
+
+        <ul class="bullet-list">
+          <li>
+            Configuración de WooCommerce como catálogo mediante YITH WooCommerce
+            Catalog Mode.
+          </li>
+
+          <li>
+            Configuración de opciones de producto con Variation Swatches for
+            WooCommerce.
+          </li>
+
+          <li>
+            Creación de un formulario con Contact Form 7 para enviar por correo
+            la información de las solicitudes de pedido.
+          </li>
+
+          <li>
+            Incorporación del contacto por WhatsApp y enlaces a Instagram y
+            TikTok.
+          </li>
+        </ul>
+      </details>
+
+      <p>
+        Las capturas muestran la versión que entregué. El cliente ha modificado
+        posteriormente el aspecto de la web.
+      </p>
+
+      <div class="project-links">
+        <a
+          href="https://bohemiacoleccion.com/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M1 5h12m0 0L9 1m4 4L9 9"></path>
-        </svg>
-      </a>
+          Visitar la web actual
+          <span aria-hidden="true">↗</span>
+          <span class="sr-only"> (abre en otra pestaña)</span>
+        </a>
+      </div>
     </div>
-  </div>
+  </article>
+
+  <article class="project-feature">
+    <div class="project-preview">
+      <div class="browser-bar" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <small>Carrito de cursos</small>
+      </div>
+
+      <button
+        class="image-zoom"
+        type="button"
+        aria-label="Ampliar la captura del carrito de cursos"
+        aria-haspopup="dialog"
+      >
+        <Image
+          src={carrito}
+          alt="Captura del catálogo de cursos de la práctica de carrito de compra"
+          width={960}
+          loading="lazy"
+        />
+      </button>
+
+      <p class="preview-help">Pulsa la imagen para ampliarla.</p>
+    </div>
+
+    <div class="project-copy">
+      <p class="eyebrow">PRÁCTICA FORMATIVA · JAVASCRIPT</p>
+
+      <h3>Carrito de cursos</h3>
+
+      <p>
+        Una práctica de interacción con el DOM a partir de un catálogo de
+        cursos. El repositorio recoge el trabajo con eventos, arrays y
+        almacenamiento local.
+      </p>
+
+      <ul class="tags" aria-label="Tecnologías del carrito">
+        <li>JavaScript</li>
+        <li>DOM</li>
+        <li>localStorage</li>
+      </ul>
+
+      <details>
+        <summary>Qué se trabaja en esta práctica</summary>
+
+        <p>
+          Lectura de datos del catálogo, gestión de cantidades con arrays y
+          representación del carrito en la página.
+        </p>
+      </details>
+
+      <div class="project-links">
+        <a
+          href="https://agua17.github.io/carritoCompra/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Ver la práctica
+          <span aria-hidden="true">↗</span>
+          <span class="sr-only"> (abre en otra pestaña)</span>
+        </a>
+
+        <a
+          href="https://github.com/agua17/carritoCompra"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Ver código
+          <span aria-hidden="true">↗</span>
+          <span class="sr-only"> (abre en otra pestaña)</span>
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <article class="training-work">
+    <p class="eyebrow">FORMACIÓN PRÁCTICA · JAVASCRIPT</p>
+
+    <h3>Aprendizaje y trabajo colaborativo</h3>
+
+    <p>
+      Continúo mi formación en desarrollo web con David Casas Arenas, realizando
+      ejercicios de JavaScript, manipulación del DOM y diseño de interfaces con
+      CSS.
+    </p>
+
+    <ul class="tags" aria-label="Tecnologías de mi formación">
+      <li>JavaScript</li>
+      <li>DOM</li>
+      <li>CSS</li>
+      <li>Git</li>
+      <li>GitHub</li>
+    </ul>
+
+    <div class="training-projects">
+      <article class="training-card">
+        <div class="training-preview">
+          <button
+            class="image-zoom"
+            type="button"
+            aria-label="Ampliar la captura del listado de películas"
+            aria-haspopup="dialog"
+          >
+            <Image
+              src={peliculas}
+              alt="Listado de películas organizado en tarjetas con sus datos y puntuaciones"
+              width={960}
+              loading="lazy"
+            />
+          </button>
+        </div>
+
+        <div class="training-card-copy">
+          <h4>Listado de películas</h4>
+
+          <p>
+            Creación de tarjetas mediante manipulación del DOM con JavaScript y
+            diseño con CSS. Cada tarjeta presenta los datos de la película, sus
+            géneros y su puntuación.
+          </p>
+
+          <p class="training-contribution">
+            Mi aportación: JavaScript y estilos CSS.
+          </p>
+        </div>
+      </article>
+
+      <article class="training-card">
+        <div class="training-preview">
+          <button
+            class="image-zoom"
+            type="button"
+            aria-label="Ampliar la captura del cronómetro"
+            aria-haspopup="dialog"
+          >
+            <Image
+              src={cronometro}
+              alt="Interfaz del ejercicio de cronómetro con contador y botones de iniciar, pausar y reiniciar"
+              width={960}
+              loading="lazy"
+            />
+          </button>
+        </div>
+
+        <div class="training-card-copy">
+          <h4>Cronómetro</h4>
+
+          <p>
+            Práctica de temporización y eventos en JavaScript, con una interfaz
+            de contador y controles de inicio, pausa y reinicio.
+          </p>
+
+          <p class="training-contribution">
+            Mi aportación: JavaScript y estilos CSS.
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <p class="preview-help">Pulsa las capturas para ampliarlas.</p>
+
+    <h4>Cómo trabajo</h4>
+
+    <ul class="training-list">
+      <li>
+        Desarrollo ejercicios y entrego mis cambios mediante pull requests.
+      </li>
+
+      <li>Recibo comentarios de revisión y trabajo en las correcciones.</li>
+
+      <li>Participo en la revisión del código de compañeros.</li>
+    </ul>
+
+    <p class="training-note">
+      Prácticas realizadas a partir de una estructura HTML proporcionada por el
+      profesor. CSS y JavaScript desarrollados por mí. El código se encuentra en
+      repositorios privados de la academia.
+    </p>
+  </article>
 </Section>
+
+<dialog
+  class="image-dialog"
+  aria-label="Vista ampliada de la captura"
+  aria-describedby="image-dialog-caption"
+>
+  <div class="image-dialog-toolbar">
+    <button class="image-dialog-close" type="button" autofocus>
+      Cerrar <span aria-hidden="true">×</span>
+    </button>
+  </div>
+
+  <div class="image-dialog-content">
+    <img class="image-dialog-photo" alt="" />
+    <p id="image-dialog-caption" class="image-dialog-caption"></p>
+  </div>
+</dialog>
+
+<script>
+  function setupProjectGallery() {
+    const section = document.querySelector<HTMLElement>("#proyectos")
+    const dialog = document.querySelector<HTMLDialogElement>(".image-dialog")
+
+    if (!section || !dialog || section.dataset.galleryReady === "true") return
+
+    const dialogImage = dialog.querySelector<HTMLImageElement>(
+      ".image-dialog-photo",
+    )
+    const dialogCaption = dialog.querySelector<HTMLElement>(
+      ".image-dialog-caption",
+    )
+    const closeButton = dialog.querySelector<HTMLButtonElement>(
+      ".image-dialog-close",
+    )
+
+    if (!dialogImage || !dialogCaption || !closeButton) return
+
+    section.dataset.galleryReady = "true"
+
+    let lastTrigger: HTMLButtonElement | null = null
+
+    const imageButtons =
+      section.querySelectorAll<HTMLButtonElement>(".image-zoom")
+
+    imageButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const image = button.querySelector<HTMLImageElement>("img")
+
+        if (!image) return
+
+        lastTrigger = button
+        dialogImage.src = image.currentSrc || image.src
+        dialogImage.alt = image.alt
+        dialogCaption.textContent = image.alt
+        dialog.showModal()
+        document.documentElement.classList.add("image-dialog-open")
+      })
+    })
+
+    closeButton.addEventListener("click", () => {
+      dialog.close()
+    })
+
+    dialog.addEventListener("click", (event) => {
+      if (event.target !== dialog) return
+
+      const bounds = dialog.getBoundingClientRect()
+      const outside =
+        event.clientX < bounds.left ||
+        event.clientX > bounds.right ||
+        event.clientY < bounds.top ||
+        event.clientY > bounds.bottom
+
+      if (outside) dialog.close()
+    })
+
+    dialog.addEventListener("close", () => {
+      document.documentElement.classList.remove("image-dialog-open")
+      lastTrigger?.focus()
+    })
+
+    const carousel = section.querySelector<HTMLElement>(".bohemia-carousel")
+    const previous = section.querySelector<HTMLButtonElement>(
+      "[data-gallery-prev]",
+    )
+    const next = section.querySelector<HTMLButtonElement>("[data-gallery-next]")
+    const counter = section.querySelector<HTMLElement>("[data-gallery-counter]")
+
+    if (!carousel || !previous || !next || !counter) return
+
+    const slides = carousel.querySelectorAll<HTMLElement>(".bohemia-slide")
+
+    if (!slides.length) return
+
+    const getCurrentIndex = () => {
+      const width = carousel.clientWidth
+
+      if (!width) return 0
+
+      return Math.max(
+        0,
+        Math.min(slides.length - 1, Math.round(carousel.scrollLeft / width)),
+      )
+    }
+
+    const updateControls = () => {
+      const index = getCurrentIndex()
+
+      counter.textContent = `${index + 1} / ${slides.length}`
+      previous.disabled = index === 0
+      next.disabled = index === slides.length - 1
+    }
+
+    const moveToSlide = (direction: number) => {
+      const index = Math.max(
+        0,
+        Math.min(slides.length - 1, getCurrentIndex() + direction),
+      )
+
+      const reducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches
+
+      carousel.scrollTo({
+        left: index * carousel.clientWidth,
+        behavior: reducedMotion ? "auto" : "smooth",
+      })
+    }
+
+    previous.addEventListener("click", () => moveToSlide(-1))
+    next.addEventListener("click", () => moveToSlide(1))
+
+    carousel.addEventListener("scroll", updateControls, { passive: true })
+
+    carousel.addEventListener("keydown", (event) => {
+      if (event.target !== carousel) return
+
+      if (event.key === "ArrowLeft") {
+        event.preventDefault()
+        moveToSlide(-1)
+      }
+
+      if (event.key === "ArrowRight") {
+        event.preventDefault()
+        moveToSlide(1)
+      }
+    })
+
+    const resizeObserver = new ResizeObserver(updateControls)
+    resizeObserver.observe(carousel)
+
+    document.addEventListener(
+      "astro:before-swap",
+      () => {
+        resizeObserver.disconnect()
+        document.documentElement.classList.remove("image-dialog-open")
+      },
+      { once: true },
+    )
+
+    updateControls()
+  }
+
+  setupProjectGallery()
+  document.addEventListener("astro:page-load", setupProjectGallery)
+</script>

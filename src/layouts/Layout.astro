@@ -1,29 +1,32 @@
 ---
-interface Props {
-	title: string;
-}
-
-const { title } = Astro.props;
+import '../styles/global.css'
+interface Props { title: string }
+const { title } = Astro.props
+const base = import.meta.env.BASE_URL
 ---
-
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio de Aguas Santas Núñez Fresco, desarrolladora frontend junior en Sevilla. JavaScript, proyectos con WordPress y prácticas con Angular en Plexus Tech." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f7fb" />
+    <link rel="icon" type="image/svg+xml" href={base + 'favicon.svg'} />
+    <link rel="canonical" href={new URL(base, Astro.site)} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content="Conoce mis proyectos web, experiencia y formación en desarrollo frontend." />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <a class="brand" href={base} aria-label="Aguas Santas Núñez Fresco, inicio"><span class="brand-mark">AN<span>·</span></span><span class="brand-name">Aguas Santas<br /><strong>Frontend developer</strong></span></a>
+      <nav aria-label="Navegación principal">
+        <a href="#proyectos">Proyectos</a><a href="#sobre-mi">Sobre mí</a><a href="#experiencia">Experiencia</a><a class="nav-contact" href="#contacto">Contacto <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <slot />
+    <footer class="site-footer"><p>Aguas Santas Núñez Fresco · Sevilla</p><a href="https://github.com/agua17" target="_blank" rel="noopener noreferrer">Mi GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (abre en otra pestaña)</span></a><p>Hecho con Astro</p></footer>
+  </body>
 </html>
-<style is:global>
-html{
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, monospace;
-	background: #fffdfd;
-	letter-spacing: -0.025rem;
-}
-</style>

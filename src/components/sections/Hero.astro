@@ -1,104 +1,43 @@
 ---
-import { basics } from "@cv";
-import Section from "@/components/Section.astro";
-import Mail from "@/assets/Mail.png";
-import Phone from "@/assets/phone.png";
-import GitHub from "@/assets/GitHub.png";
-import Linkedin from "@/assets/Linkedin.png";
-import { Image } from "astro:assets";
-import image from "../../assets/foto_presentacion.png";
-import icon from "../../assets/Mail.png";
-import icon_phone from "../../assets/Phone.png";
-import icon_linkedin from "../../assets/Linkedin.png";
-import icon_github from "../../assets/GitHub.png";
-
-const { name, label, location, profiles, email, phone } = basics;
-const { city, region } = location;
+import { Image } from "astro:assets"
+import portrait from "../../assets/foto_perfil.png"
+const base = import.meta.env.BASE_URL
 ---
 
-<Section>
-  <div class="container flex flex-row items-center sm:items-start">
-    <div class="photo_me">
-      <figure class="max-w-full h-auto">
-        <Image src={image} alt={name} />
-      </figure>
+<section class="hero" aria-labelledby="intro-title">
+  <div class="hero-copy">
+    <p class="eyebrow">DESARROLLADORA FRONTEND JUNIOR · SEVILLA</p>
+    <h1 id="intro-title">Aguas Santas<br /><span>Núñez Fresco</span></h1>
+    <p class="hero-description">
+      Desarrollo web con JavaScript y WordPress. Formación en DAW y experiencia
+      de prácticas con Angular en Plexus Tech.
+    </p>
+    <div class="actions">
+      <a class="button primary" href="#proyectos"
+        >Ver mis proyectos <span aria-hidden="true">↗</span></a
+      >
+      <a
+        class="button secondary"
+        href={base + "CV_Aguas_Santas_Frontend.pdf"}
+        download>Descargar CV <span aria-hidden="true">↓</span></a
+      >
     </div>
-    <div class="info gap-8 mt-36">
-      <h1>
-        <span class="text-4xl font-bold text-purple-950 mt-10">{name} </span>
-      </h1>
-
-      <h2>
-        <span class="text-4xl font-bold text-cyan-600 mt-10">{label}</span>
-      </h2>
-      <span class="text-lg font-bold text-cyan-600">
-        {city}, {region}
-      </span>
+    <p class="hero-note">
+      Busco una oportunidad para incorporarme a un equipo frontend.
+    </p>
+  </div>
+  <div class="hero-portrait">
+    <div class="portrait-frame">
+      <Image
+        src={portrait}
+        alt="Aguas Santas Núñez Fresco"
+        width={340}
+        height={340}
+        loading="eager"
+      />
+    </div>
+    <div class="portrait-caption">
+      <span class="dot" aria-hidden="true"></span> Los Palacios y Villafranca, Sevilla
     </div>
   </div>
-  <div class="iconos_redes">
-    <footer class="flex">
-      {
-        email && (
-          <a
-            href={`mailto: ${email}`}
-            title={`Enviar un correo electrónico a ${name} al correo ${email}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <figure class="w-20">
-              <Image src={icon} alt="email" />
-            </figure>
-          </a>
-        )
-      }
-
-      {
-        phone && (
-          <a
-            href={`tel:${phone}`}
-            title={`Llamar por teléfono a ${name} al número ${phone}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <figure class="w-20">
-              <Image src={icon_phone} alt="email" />
-            </figure>
-          </a>
-        )
-      }
-
-      {
-        Linkedin && (
-          <a
-            href={`https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile`}
-            title={`Perfil de ${name} `}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <figure class="w-20">
-              <Image src={icon_linkedin} alt="Linkedin" />
-            </figure>
-          </a>
-        )
-      }
-
-      {
-        GitHub && (
-          <a
-            href={`https://github.com/agua17`}
-            title={`Cuenta de GitHub de ${name} `}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <figure class="w-20">
-              <Image src={icon_github} alt="GitHub" />
-            </figure>
-          </a>
-        )
-      }
-    </footer>
-  </div>
-</Section>
-
-<style></style>
+</section>
