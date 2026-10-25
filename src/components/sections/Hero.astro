@@ -6,30 +6,101 @@ const base = import.meta.env.BASE_URL
 
 <section class="lavender-hero" aria-labelledby="intro-title">
   <div class="lavender-hero-copy">
-    <p class="availability"><span aria-hidden="true"></span>Buscando mi próxima oportunidad</p>
+    <p class="availability">
+      <span aria-hidden="true"></span>Buscando mi próxima oportunidad
+    </p>
     <p class="hero-role">DESARROLLADORA FRONTEND JUNIOR</p>
-    <h1 id="intro-title"><span>Aguas Santas</span><strong>Núñez Fresco<span aria-hidden="true">.</span></strong></h1>
+    <h1 id="intro-title">
+      <span>Aguas Santas</span><strong
+        >Núñez Fresco<span aria-hidden="true">.</span></strong
+      >
+    </h1>
     <p class="hero-intro-line">Diseño, código y ganas de seguir creciendo.</p>
-    <p class="hero-description">Soy técnica superior en Desarrollo de Aplicaciones Web, con prácticas en Plexus Tech y proyectos para pequeños negocios. Trabajo con HTML, CSS, JavaScript y WordPress, y sigo ampliando mi formación en desarrollo web.</p>
+    <p class="hero-description">
+      Soy técnica superior en Desarrollo de Aplicaciones Web, con prácticas en
+      Plexus Tech y proyectos para pequeños negocios. Trabajo con HTML, CSS,
+      JavaScript y WordPress, y sigo ampliando mi formación en desarrollo web.
+    </p>
     <div class="actions">
-      <a class="button primary" href="#proyectos">Ver mis proyectos <span aria-hidden="true">↗</span></a>
-      <a class="button secondary" href={base + "CV_Aguas_Santas_Frontend.pdf"} download>Descargar CV <span aria-hidden="true">↓</span></a>
+      <a class="button primary" href="#proyectos">
+        Ver mis proyectos <span aria-hidden="true">↗</span>
+      </a>
+
+      <a
+        class="button secondary"
+        href={base + "CV_Aguas_Santas_Frontend.pdf"}
+        download
+      >
+        Descargar CV <span aria-hidden="true">↓</span>
+      </a>
+
+      <a
+        class="button secondary"
+        href="https://github.com/agua17"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub <span aria-hidden="true">↗</span>
+        <span class="sr-only"> (abre en otra pestaña)</span>
+      </a>
     </div>
-    <div class="hero-social"><a href="https://github.com/agua17" target="_blank" rel="noopener noreferrer">GitHub ↗<span class="sr-only"> (abre en otra pestaña)</span></a><span aria-hidden="true">/</span><a href="#contacto">Hablemos de una oportunidad ↗</a></div>
-  </div>
-  <div class="lavender-hero-art">
-    <div class="portrait-halo" aria-hidden="true"></div>
-    <div class="portrait-orbit" aria-hidden="true"></div>
-    <div class="real-portrait"><Image src={portrait} alt="Aguas Santas Núñez Fresco" width={900} loading="eager" fetchpriority="high" /></div>
-    <div class="floating-code" aria-hidden="true">&lt;/&gt;</div>
-    <div class="floating-design" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
-    <div class="portrait-label"><span class="label-spark" aria-hidden="true">✳</span><span>Una mirada creativa.<br /><strong>Un camino en frontend.</strong></span></div>
-    <span class="hero-spark spark-one" aria-hidden="true">✦</span><span class="hero-spark spark-two" aria-hidden="true">✧</span>
+    <div class="hero-social"></div><span aria-hidden="true">/</span><a
+      href="#contacto">Hablemos de una oportunidad ↗</a
+    >
   </div>
 </section>
+<div class="lavender-hero-art">
+  <div class="portrait-halo" aria-hidden="true"></div>
+  <div class="portrait-orbit" aria-hidden="true"></div>
+  <div class="real-portrait">
+    <Image
+      src={portrait}
+      alt="Aguas Santas Núñez Fresco"
+      width={900}
+      loading="eager"
+      fetchpriority="high"
+    />
+  </div>
+  <div class="floating-code" aria-hidden="true">&lt;/&gt;</div>
+  <div class="floating-design" aria-hidden="true">
+    <span></span><span></span><span></span><span></span>
+  </div>
+  <div class="portrait-label">
+    <span class="label-spark" aria-hidden="true">✳</span><span
+      >Una mirada creativa.<br /><strong>Un camino en frontend.</strong></span
+    >
+  </div>
+  <span class="hero-spark spark-one" aria-hidden="true">✦</span><span
+    class="hero-spark spark-two"
+    aria-hidden="true">✧</span
+  >
+</div>
+
 <div class="hero-foundations" aria-label="Mi experiencia en desarrollo web">
-  <div><span class="foundation-icon" aria-hidden="true">&lt;/&gt;</span><p><strong>Desarrollo web</strong><span>HTML · CSS · JavaScript</span></p></div>
-  <div><span class="foundation-icon" aria-hidden="true">◈</span><p><strong>Diseño de interfaces</strong><span>Figma · Personalización visual</span></p></div>
-  <div><span class="foundation-icon" aria-hidden="true">W</span><p><strong>Proyectos para negocios</strong><span>WordPress · WooCommerce</span></p></div>
-  <div><span class="foundation-icon" aria-hidden="true">↗</span><p><strong>Aprendizaje continuo</strong><span>Git · Pull requests · Revisiones</span></p></div>
+  <div>
+    <span class="foundation-icon" aria-hidden="true">&lt;/&gt;</span><p>
+      <strong>Desarrollo web</strong><span>HTML · CSS · JavaScript</span>
+    </p>
+  </div>
+  <div>
+    <span class="foundation-icon" aria-hidden="true">◈</span><p>
+      <strong>Diseño de interfaces</strong><span
+        >Figma · Personalización visual</span
+      >
+    </p>
+  </div>
+  <div>
+    <span class="foundation-icon" aria-hidden="true">W</span><p>
+      <strong>Proyectos para negocios</strong><span
+        >WordPress · WooCommerce</span
+      >
+    </p>
+  </div>
+  <div>
+    <span class="foundation-icon" aria-hidden="true">↗</span><p>
+      <strong>Aprendizaje continuo</strong><span
+        >Git · Pull requests · Revisiones</span
+      >
+    </p>
+  </div>
 </div>
