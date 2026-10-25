@@ -9,10 +9,11 @@ import formulario from "../../assets/03_formulario_pedido.png"
 import redes from "../../assets/04_envio_y_redes.png"
 import peliculas from "../../assets/listado_peliculas.png"
 import cronometro from "../../assets/cronometro.png"
+import marrufit from "../../assets/marrufit_figma.png"
 ---
 
-<Section id="proyectos" title="Una muestra de mi trabajo" eyebrow="PROYECTOS">
-  <article class="project-feature">
+<Section id="proyectos" title="Proyectos con los que he aprendido y creado" eyebrow="PROYECTOS SELECCIONADOS">
+  <article id="bohemia" class="project-feature project-bohemia">
     <div class="project-preview bohemia-preview">
       <div class="browser-bar" aria-hidden="true">
         <span></span>
@@ -135,15 +136,14 @@ import cronometro from "../../assets/cronometro.png"
       </div>
 
       <p id="bohemia-carousel-help" class="bohemia-carousel-help">
-        Usa las flechas o desliza para ver las capturas. Pulsa una imagen para
-        ampliarla.
+        Desliza para explorar · Pulsa para ampliar
       </p>
     </div>
 
     <div class="project-copy">
       <p class="eyebrow">PROYECTO PARA UN PEQUEÑO NEGOCIO</p>
 
-      <h3>Bohemia Colección</h3>
+      <h3>Bohemia<br />Colección</h3>
 
       <p>
         Desarrollo de una web catálogo de productos personalizados con WordPress
@@ -155,12 +155,17 @@ import cronometro from "../../assets/cronometro.png"
         <li>WordPress</li>
         <li>WooCommerce</li>
         <li>Contact Form 7</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Hostinger</li>
+        <li>Figma</li>
       </ul>
 
       <details>
         <summary>Mi trabajo en este proyecto</summary>
 
         <ul class="bullet-list">
+          <li>Diseño previo en Figma, personalización con HTML y CSS y publicación de la web en Hostinger.</li>
           <li>
             Configuración de WooCommerce como catálogo mediante YITH WooCommerce
             Catalog Mode.
@@ -202,7 +207,7 @@ import cronometro from "../../assets/cronometro.png"
     </div>
   </article>
 
-  <article class="project-feature">
+  <article class="project-feature project-cart">
     <div class="project-preview">
       <div class="browser-bar" aria-hidden="true">
         <span></span>
@@ -278,15 +283,31 @@ import cronometro from "../../assets/cronometro.png"
     </div>
   </article>
 
+  <article class="project-feature project-figma">
+    <div class="project-preview">
+      <button class="image-zoom" type="button" aria-label="Ampliar el diseño de Marrufit en Figma" aria-haspopup="dialog">
+        <Image src={marrufit} alt="Diseño de la página de inicio de Marrufit dentro del editor de Figma" width={1200} loading="lazy" />
+      </button>
+      <p class="preview-help">Captura del proceso de diseño · Pulsa para ampliar</p>
+    </div>
+    <div class="project-copy">
+      <p class="eyebrow">DISEÑO WEB · PROYECTO NO PUBLICADO</p>
+      <h3>Marrufit</h3>
+      <p>Diseño en Figma de una propuesta web para un gimnasio, con páginas de presentación, servicios, horarios e inicio de sesión.</p>
+      <ul class="tags" aria-label="Herramientas de Marrufit"><li>Figma</li><li>Diseño de interfaces</li></ul>
+      <p>El proyecto se canceló antes de su publicación porque el negocio finalmente no abrió. Las capturas recogen el trabajo de diseño realizado.</p>
+    </div>
+  </article>
+
   <article class="training-work">
     <p class="eyebrow">FORMACIÓN PRÁCTICA · JAVASCRIPT</p>
 
     <h3>Aprendizaje y trabajo colaborativo</h3>
 
     <p>
-      Continúo mi formación en desarrollo web con David Casas Arenas, realizando
-      ejercicios de JavaScript, manipulación del DOM y diseño de interfaces con
-      CSS.
+      Continúo mi formación en desarrollo web con David Casas Arenas, ampliando
+      mi perfil tecnológico desde HTML, CSS y JavaScript, con un itinerario
+      orientado a continuar con React y Node.js.
     </p>
 
     <ul class="tags" aria-label="Tecnologías de mi formación">
@@ -378,9 +399,15 @@ import cronometro from "../../assets/cronometro.png"
 
     <p class="training-note">
       Prácticas realizadas a partir de una estructura HTML proporcionada por el
-      profesor. CSS y JavaScript desarrollados por mí. El código se encuentra en
-      repositorios privados de la academia.
+      profesor. CSS y JavaScript desarrollados por mí.
     </p>
+    <aside class="github-context" aria-labelledby="github-context-title">
+      <div>
+        <h4 id="github-context-title">Mi práctica también está en repositorios privados</h4>
+        <p>Parte de mi aprendizaje se desarrolla en repositorios privados de la academia, donde entrego ejercicios mediante pull requests y participo en revisiones de código. Mi perfil público de GitHub no muestra todo ese trabajo; aquí puedes ver una selección de sus resultados.</p>
+      </div>
+      <a class="button secondary" href="https://github.com/agua17" target="_blank" rel="noopener noreferrer">Ver mi GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (abre en otra pestaña)</span></a>
+    </aside>
   </article>
 </Section>
 

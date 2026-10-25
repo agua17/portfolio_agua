@@ -30,7 +30,7 @@
     },
     {
       "name": "Bohemia Colección",
-      "technology": "WordPress y WooCommerce",
+      "technology": "Figma, WordPress, WooCommerce, HTML, CSS y Hostinger",
       "url": "https://bohemiacoleccion.com/",
       "summary": "Catálogo online de productos personalizados, sin compra ni pago online, con solicitudes de pedido por correo.",
       "images": [
@@ -40,24 +40,37 @@
           "caption": "Catálogo de productos"
         },
         {
-          "src": "/src/assets/bohemia/01_inicio.png",
+          "src": "/src/assets/01_inicio.png",
           "alt": "Página de inicio de Bohemia Colección",
           "caption": "Página de inicio"
         },
         {
-          "src": "/src/assets/bohemia/03_formulario_pedido.png",
+          "src": "/src/assets/03_formulario_pedido.png",
           "alt": "Formulario para solicitar un pedido personalizado",
           "caption": "Solicitud de pedido"
         },
         {
-          "src": "/src/assets/bohemia/04_envio_y_redes.png",
+          "src": "/src/assets/04_envio_y_redes.png",
           "alt": "Envío de solicitudes y enlaces a redes sociales",
           "caption": "Envío y redes sociales"
         }
       ]
+    },
+    {
+      "name": "Marrufit",
+      "technology": "Figma",
+      "type": "Diseño web · Proyecto no publicado",
+      "summary": "Diseño de una propuesta web para un gimnasio. Proyecto cancelado por motivos ajenos a mi trabajo."
     }
   ],
   "work": [
+    {
+      "name": "Proyectos para pequeños negocios",
+      "position": "Desarrollo de webs para clientes",
+      "startDate": "2024",
+      "endDate": "2025",
+      "summary": "Creación y personalización con WordPress, HTML y CSS. Proyecto destacado: Bohemia Colección, catálogo con WooCommerce y formularios de pedido, publicado en Hostinger."
+    },
     {
       "name": "Plexus Tech",
       "position": "Desarrolladora web en prácticas",
@@ -134,11 +147,11 @@
   ],
   "formation": [
     {
-      "name": "Formación práctica en JavaScript y desarrollo web",
+      "name": "Desarrollo web: ampliación del perfil tecnológico",
       "issuer": "David Casas Arenas",
       "startDate": "2025-11",
       "endDate": "Actualidad",
-      "summary": "Funciones, arrays, DOM, eventos y formularios. Entregas mediante pull requests y revisión de código de compañeros."
+      "summary": "Ampliación de HTML, CSS y JavaScript. Itinerario orientado a continuar con React y Node.js. Entregas mediante pull requests y revisión de código de compañeros."
     },
     {
       "name": "JavaScript Total",
